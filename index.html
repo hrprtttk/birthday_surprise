@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Surprise</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align:center;
+            background:#ffe6f0;
+            padding:50px;
+        }
+        #content{
+            display:none;
+        }
+        img{
+            width:250px;
+            border-radius:15px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Birthday Surprise 🎉</h1>
+
+<input type="password" id="pass" placeholder="Enter Password">
+<button onclick="checkPassword()">Open</button>
+
+<div id="content">
+    <h2>Happy Birthday My Friend! ❤️</h2>
+    <p>You are amazing and I wish you all the happiness in the world!</p>
+    <img src="https://via.placeholder.com/250" alt="Photo">
+</div>
+
+<script>
+function checkPassword(){
+    if(document.getElementById("pass").value === "birthday"){
+        document.getElementById("content").style.display = "block";
+    } else {
+        alert("Wrong Password!");
+    }
+}
+</script>
+
+</body>
+</html>
